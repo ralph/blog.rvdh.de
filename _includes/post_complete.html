@@ -1,0 +1,15 @@
+<h3 class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<span class="less_emphasis small">» Posted on {{ post.date | date_to_string }}</span>
+
+{% if content %}
+	{{ content }}
+{% else %}
+	{{ post.content}}
+{% endif %}
+<div class="article_meta less_emphasis">
+	<a href="{{post.url}}#disqus_thread">View Comments</a> ·
+	Tags:
+	{% for topic in post.topics %}
+		<a href="/archives/by_tag.html#tag_{{ topic }}">{{ topic }}</a>{% if !forloop.first %},{% endif %}
+	{% endfor %}
+</div>

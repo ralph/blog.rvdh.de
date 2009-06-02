@@ -1,0 +1,35 @@
+---
+layout: post
+title: Encoding issues with Ruby 1.9 and Rails 2.3
+topics: [rails, ruby]
+---
+
+h4. Introduction
+
+Ah, the joy of Ruby 1.9! It really is a lot of faster. Time to move your Rails app over, you think. You have been keeping up with the latest Rails versions, until the latest stable "v2.3.2.1":http://github.com/rails/rails/tree/v2.3.2.1, so moving on to Ruby 1.9 should not be a big deal, right? And that's where the trouble starts.
+
+
+h4. Gems and plugins
+
+Before even touching your own code, make sure that all of the plugins and gems you are currently using are supported by Ruby 1.9. Check out "is it ruby 1.9":http://isitruby19.com/ to find out whether other users have had success running these third party components under Ruby 1.9 to find potential show stoppers. It may be a good idea to update all gems and plugins to the latest versions, if you have not done it already, because many maintainers have only added Ruby 1.9 support lately. Make sure the latest versions of all third party components work fine with your current application and Ruby version. If everything should be fine, proceed.
+
+
+h4. Rails application code and UTF-8
+
+The following instructions assume that you have installed Ruby 1.9 with a "19" suffix, so the interpreter is named "ruby19", interactive ruby is named "irb19" etc. If you are using UTF-8 characters, e.g. in your flash messages, the Ruby 1.9 interpreter will complain about incompatible character sets. The obvious solution is to add the "# encoding: utf-8" magic comment on top of every file that includes unicode characters like umlauts, for example a controller with a German flash message. The next problem you will run into is data from ActiveRecord. The combination of Rails 2.3 and Ruby 1.9 returns ASCII-encoded attribute strings, which will lead to problems with your utf-8 encoded controllers. This does happen even though utf-8 is configured in database.yml and the database tables contain utf-8 encoded data. The following example demonstrates the lack of utf-8 support when using Ruby 1.9:
+
+ralph@ralphs-macbook utf8test  % ruby script/console # This is Ruby 1.8
+Loading development environment (Rails 2.3.2)
+>> Article.last.title
+=> "Hello World öäü"
+
+ralph@ralphs-macbook utf8test  % ruby script/console --irb=irb19 # This is Ruby 1.9
+Loading development environment (Rails 2.3.2)
+>> Article.last.title
+=> "Hello World \xC3\xB6\xC3\xA4\xC3\xBC"
+>> Article.last.title.force_encoding("utf-8")
+=> "Hello World öäü"
+
+Currently, you have two options to work around the issue. Number one is, like demonstrated above, using the utf-8 magic comment and forcing the encoding for every ActiveRecord attribute string you want to use. The second solution is sticking with ASCII. Umlauts and other non ASCII-characters are automatically encoded in ASCII strings by ActiveRecord, and are displayed correctly when used in views. When you decide to use the second solution, you need to replace the special characters in your controllers and otherwhere with html entities, for example "ü" becomes "@&uuml;@". You need to remove the utf-8 magic comment, if you added it already, too. Yay, the joys of ASCII!
+
+The current situation is far from perfect, and it remains to be hoped that a future ActiveRecord version sticks to the encoding that was configured in database.yml. If you are using lots of unicode characters throughout your application, I can not recommend switching to Ruby 1.9 at the moment. If your use of unicode characters is very limited, you can probably live with the current workarounds. At least the speed advantage of Ruby 1.9 justifies a switch in the near future, assumed that you have a good test suite.

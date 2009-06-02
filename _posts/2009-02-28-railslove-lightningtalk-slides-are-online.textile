@@ -1,0 +1,13 @@
+---
+layout: post
+title: Yesterday's Railslove LightningTalk slides are online
+topics: [talks]
+---
+
+I just published the slides of yesterday's "Railslove":http://railslove.com/ "lightning talk":http://wiki.railslabs.com/index.php?title=LightningTalks at "Slideshare":http://www.slideshare.net/ralphvdh/frontend-performance. Feel free to leave a comment or ask some of the questions I could not answer yesterday, because I seem to have forgotten most of them.
+
+<object type="application/x-shockwave-flash" data="http://static.slideshare.net/swf/ssplayer2.swf?doc=frontendperformance-090228060128-phpapp02&amp;stripped_title=frontend-performance" style="margin:0px" width="425" height="355">
+	<param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=frontendperformance-090228060128-phpapp02&amp;stripped_title=frontend-performance" />
+	<param name="allowFullScreen" value="true"/>
+	<param name="allowScriptAccess" value="always"/>
+</object>

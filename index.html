@@ -1,0 +1,19 @@
+---
+layout: default
+title: Ralph’s Blog
+---
+
+{% for post in site.posts limit:3 %}
+	{% include post_complete.html %}
+{% endfor %}
+
+<h3><a href="/archives/index.html">Older posts:</a></h3>
+
+<ul class="posts">
+{% for post in site.posts limit:7 offset:3 %}
+	{% include post_list_item.html %}
+{% endfor %}
+</ul>
+
+
+<h3 class="align_right"><a href="/archives/index.html">View all previous posts in archives »</a></h3>
