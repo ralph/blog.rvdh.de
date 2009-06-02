@@ -6,7 +6,7 @@ topics: [talks]
 
 I finally found the time to upload the slides of my short talk at "RailsWayCon":http://www.railswaycon.com/ to "Slideshare":http://www.slideshare.net/ralphvdh/front-end-performance-railswaycon-2009-short-talk. Feel free to leave a comment or ask questions about it!
 
-There is a "PDF-Version":/files/frontend_performance_optimization.pdf, too, if you prefer that.
+There is a "PDF-Version":/files/railswaycon_front_end_performance.pdf, too, if you prefer that.
 
 <object type="application/x-shockwave-flash" data="http://static.slideshare.net/swf/ssplayer2.swf?doc=railswaycon2009-090602033020-phpapp01&amp;stripped_title=front-end-performance-railswaycon-2009-short-talk" style="margin:0px" width="425" height="355">
 	<param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=railswaycon2009-090602033020-phpapp01&amp;stripped_title=front-end-performance-railswaycon-2009-short-talk" />
