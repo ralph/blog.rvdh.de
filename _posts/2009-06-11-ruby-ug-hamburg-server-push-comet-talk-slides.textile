@@ -1,0 +1,13 @@
+---
+layout: post
+title: Slides of my Rails usergroup Hamburg talk
+topics: [talks]
+---
+
+These are "the slides":http://www.slideshare.net/ralphvdh/server-push-and-comet-rails-user-group-hamburg-20090610-1570255 of my talk at the Rails user group Hamburg, which took place on the 10th June in the "XING":http://www.xing.com event room. And there was some free pizza, too. :)
+
+<object type="application/x-shockwave-flash" data="http://static.slideshare.net/swf/ssplayer2.swf?doc=railsughamburg20090610-090611162900-phpapp02&amp;stripped_title=server-push-and-comet-rails-user-group-hamburg-20090610-1570255" style="margin:0px" width="425" height="355">
+	<param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=railsughamburg20090610-090611162900-phpapp02&amp;stripped_title=server-push-and-comet-rails-user-group-hamburg-20090610-1570255" />
+	<param name="allowFullScreen" value="true"/>
+	<param name="allowScriptAccess" value="always"/>
+</object>
