@@ -17,44 +17,29 @@
 	<div class="container">
 		<div id="reference_point">
 			{% if page.url %}
-			<a href="/"><span class="less_emphasis">blog.rvdh.de</span></a><a href="{{ page.url }}">{{ page.url }}</a>
+				<a href="/"><span class="less_emphasis">blog.rvdh.de</span></a><a href="{{ page.url }}">{{ page.url }}</a>
+			{% elsif page.breadcrumb %}
+				<a href="/">{{ page.breadcrumb }}<span class="less_emphasis">.de</span></a>
 			{% else %}
-			<a href="/">blog<span class="less_emphasis">.rvdh.de</span></a>
+				<a href="/">blog<span class="less_emphasis">.rvdh.de</span></a>
 			{% endif %}
 		</div>
 		<hr />
-		<h1><a href="/">Ralph’s Blog</a></h1>
+		<h1><a href="/">{{ page.headline }}</a></h1>
 		<div id="content" class="column">
 			{{ content }}
 		</div>
-		<div id="sidebar" class="column">
-			<h3><a href="/archives/index.html">Recent posts</a></h3>
-			<ul class="posts">
-			{% for post in site.posts limit:3 %}
-				<li>
-					<a href="{{ post.url }}">{{ post.title }}</a>		
-				</li>
-			{% endfor %}
-			</ul>
-			<h3><a href="/archives/by_tag.html">Tags</a></h3>
-			<ul>
-				<li><a href="/archives/by_tag.html#tag_blog">blog</a></li>
-				<li><a href="/archives/by_tag.html#tag_jekyll">jekyll</a></li>
-				<li><a href="/archives/by_tag.html#tag_performance">performance</a></li>
-				<li><a href="/archives/by_tag.html#tag_rails">rails</a></li>
-				<li><a href="/archives/by_tag.html#tag_ruby">ruby</a></li>
-				<li><a href="/archives/by_tag.html#tag_talks">talks</a></li>
-				<li><a href="/archives/by_tag.html#tag_twitter">twitter</a></li>
-			</ul>
-			<a href="http://it-republik.de/konferenzen/railswaycon/sessions/?tid=1228#session-4">
-				<img src="/images/railswaycon_2009_speaker_badge.gif" alt="RailsWayCon 2009 Speaker Badge"></img>
-			</a>
-		</div>
+		{% if "blog" == page.sidebar %}
+			{% include blog_sidebar.html %}
+		{% endif %}
+		{% if "website" == page.sidebar %}
+			{% include website_sidebar.html %}
+		{% endif %}
 		<hr />
 		<p>
 			Ralph von der Heyden
-			· Karl-Ernst-Osthaus-Str. 27
-			· 58093 Hagen
+			· Desenißstr. 36
+			· 22083 Hamburg
 			· Germany
 			· <script type="text/javascript">
 			/* <![CDATA[ */
@@ -76,7 +61,6 @@
 			;var i,c,x;while(eval(kode));}hivelogic_enkoder();
 			/* ]]> */
 			</script>
-			· <a href="http://rvdh.de">Website</a>
 			· <a href="#reference_point">↑ Go to top ↑</a>
 		</p>
 	</div>

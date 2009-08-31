@@ -1,0 +1,15 @@
+---
+layout: default
+title: Ralph von der Heyden
+sidebar: website
+headline: Hello, I'm Ralph.
+breadcrumb: ralphvonderheyden
+---
+
+h3. I develop stuff for the web.
+
+Being a netizen since I hacked up a dial-up script for my parents' modem, I've extended this initial knowledge to quite a few web related technologies. Over the years, I have created websites and web applications in PHP, Java/J2EE and Ruby on Rails. During my studies, I've been running a small company called "FireDesign":http://firedesign.de with a fellow student. More details are included in my "XING profile":https://www.xing.com/profile/Ralph_vonderHeyden. My Master-thesis was about performance monitoring and tuning in the frontend, so I'm an expert in that specific field.
+
+Most of the stuff I do nowadays is somehow related to Ruby on Rails. I like the agile development approach and the progress velocity. Writing automated tests with Rails is so easy that it is a matter of course. All in all, Rails has been the technology that had the biggest impact on my web development skills.
+
+In my free time, I enjoy taking photos with one of "my cameras":http://www.flickr.com/photos/rvdh/sets/72157612476174727/. Furthermore, I'm interested in Internet-related culture and impact, like what the web means to our personal and business lifes. This includes the emergence of networks and relationships, like we take them for granted in our daily routine by now.
