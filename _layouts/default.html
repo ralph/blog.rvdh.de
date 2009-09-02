@@ -17,11 +17,11 @@
 	<div class="container">
 		<div id="reference_point">
 			{% if page.url %}
-				<a href="/"><span class="less_emphasis">blog.rvdh.de</span></a><a href="{{ page.url }}">{{ page.url }}</a>
+				<a href="/"><span class="less_emphasis">rvdh.de</span></a><a href="{{ page.url }}">{{ page.url }}</a>
 			{% elsif page.breadcrumb %}
 				<a href="/">{{ page.breadcrumb }}<span class="less_emphasis">.de</span></a>
 			{% else %}
-				<a href="/">blog<span class="less_emphasis">.rvdh.de</span></a>
+				<a href="/"><span class="less_emphasis">rvdh.de</span>/blog</a>
 			{% endif %}
 		</div>
 		<hr />
