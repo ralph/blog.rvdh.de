@@ -21,11 +21,11 @@
 			{% elsif page.breadcrumb %}
 				<a href="/">{{ page.breadcrumb }}<span class="less_emphasis">.de</span></a>
 			{% else %}
-				<a href="/"><span class="less_emphasis">rvdh.de</span>/blog</a>
+				<a href="/"><span class="less_emphasis">rvdh.de</span></a><a href="/blog">/blog</a>
 			{% endif %}
 		</div>
 		<hr />
-		<h1><a href="/">{{ page.headline }}</a></h1>
+		<h1>{{ page.headline }}</h1>
 		<div id="content" class="column">
 			{{ content }}
 		</div>
