@@ -23,10 +23,7 @@ site.tags.each do |tag, posts|
   archives_by_tag_template << "<ul class=\"posts\">\n"
   posts_html =<<END
     {% for post in site.tags.#{tag} %}
-      <li>
-        <span class="less_emphasis small">{{ post.date | date_to_string }} »</span>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+      {% include post_list_item.html %}
     {% endfor %}
 END
   archives_by_tag_template << posts_html

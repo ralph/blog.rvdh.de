@@ -89,4 +89,6 @@ div.article_meta {margin-bottom:3em;background:#eaeaea;border:1px solid #ddd;pad
 ul {list-style-type:square;}
 .showgrid {background:url(grid.png);}
 .align_right {text-align:right;}
+.post_list_item {position:relative;}
+.post_list_item_title_with_arrow {position:absolute;left:5.5em;}
 /* @end */
