@@ -1,92 +1,92 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>{{ page.title }}</title>
-	<link rel="stylesheet" href="/stylesheets/rvdh_styles.css" type="text/css" media="screen" />
-	<!--[if lte IE 7]>
-	  <link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" />
-	<![endif]-->
-	<link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print" />
-	<link href="http://feeds2.feedburner.com/ralphs_blog" rel="alternate" title="Ralph’s Blog" type="application/atom+xml" />
-	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/stylesheets/rvdh_styles.css" type="text/css" media="screen" />
+  <!--[if lte IE 7]>
+    <link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print" />
+  <link href="http://feeds2.feedburner.com/ralphs_blog" rel="alternate" title="Ralph’s Blog" type="application/atom+xml" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
 </head>
 <body>
-	<div class="container">
-		<div id="reference_point">
-			{% if page.url %}
-			<a href="/"><span class="less_emphasis">rvdh.de</span></a><a href="{{ page.url }}">{{ page.url }}</a>
-			{% elsif page.breadcrumb %}
-				<a href="/">{{ page.breadcrumb }}<span class="less_emphasis">.de</span></a>
-			{% else %}
-				<a href="/"><span class="less_emphasis">rvdh.de</span></a><a href="/blog">/blog</a>
-			{% endif %}
-		</div>
-		<hr />
-		<h1>{{ page.headline }}</h1>
-		<div id="content" class="column">
-			{{ content }}
-		</div>
-		{% if "blog" == page.sidebar %}
-			{% include blog_sidebar.html %}
-		{% endif %}
-		{% if "website" == page.sidebar %}
-			{% include website_sidebar.html %}
-		{% endif %}
-		<hr />
-		<p>
-			Ralph von der Heyden
-			· Desenißstr. 36
-			· 22083 Hamburg
-			· Germany
-			· <script type="text/javascript">
-			/* <![CDATA[ */
-			function hivelogic_enkoder(){var kode=
-			"kode=\"oked\\\"=kode\\\"\\\\r=hn%gn@gr%hu_k@(q-j.Co/p-/tkux4|.xy/k-kz4r-y."+
-			"kouvC4jjqqbkqujAC((ubk/bbbbA(bbbgbBbjDn5|k&4zjaxncrgx&bvbgbDbbbbb(bbbb'bsb"+
-			"rbgkb&bobSbbbbb(bbbbCbrbob&kbzbz(bbbbbbbbbbbjbnb|kF4vjgx@nzroxsubrbg(bbbbb"+
-			"bbbbbblbxb&CBkbnbg(bbbkbob}.zzkx{4utbsbiAju(kbqqjj4Cvuok.y-r4zk-k/yx.|4xuk"+
-			"t/-p/o(.k-ub(CqjjqCAuukkyqrjz4-v/ox.|-x4kk/kpyo..4-u_t/->%@{**i>url+3@l>n?"+
-			"gr1hhojqkwl>..~,@frnhgf1dkFugrDh+w,l60l>+i?f,3.f4@;5{>@.wVlujqi1ruFpdkFugr"+
-			"+h0f\\\\\\\\00,rnhg{@%>{@**>iru+l@3>l?+nrgh1ohqjwk04,>l.@5,~{.@nrgh1fkduDw"+
-			"+l.4,.nrgh1fkduDw+l,\\\\00\\\\r0hn{g+@?.rlhnogq1whBjrkhnfgd1Dk+urwhnogq1wh"+
-			"0j,k*4,=\\\\*>\\\";x='';for(i=0;i<kode.length;i++){c=kode.charCodeAt(i)-3;"+
-			"if(c<0)c+=128;x+=String.fromCharCode(c)}kode=x;\\\"=x''f;roi(0=i;(<okedl.n"+
-			"etg-h)1i;=+)2x{=+okedc.ahAr(t+i)1k+do.ehcratAi(})okedx=(+<iokedl.netg?hoke"+
-			"dc.ahAr(tokedl.netg-h)1':)';\";x='';for(i=0;i<(kode.length-1);i+=2){x+=kod"+
-			"e.charAt(i+1)+kode.charAt(i)}kode=x+(i<kode.length?kode.charAt(kode.length"+
-			"-1):'');"
-			;var i,c,x;while(eval(kode));}hivelogic_enkoder();
-			/* ]]> */
-			</script>
-			· <a href="#reference_point">↑ Go to top ↑</a>
-		</p>
-	</div>
-	<script type="text/javascript">
-	//<![CDATA[
-	(function() {
-			var links = document.getElementsByTagName('a');
-			var query = '?';
-			for(var i = 0; i < links.length; i++) {
-				if(links[i].href.indexOf('#disqus_thread') >= 0) {
-					query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-				}
-			}
-			document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ralphsblog/get_num_replies.js' + query + '"></' + 'script>');
-		})();
-	//]]>
-	</script>
-	<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-		try {
-			var pageTracker = _gat._getTracker("UA-310834-2");
-			pageTracker._trackPageview();
-		} catch(err) {}
-	</script>
+  <div class="container">
+    <div id="reference_point">
+      {% if page.url %}
+      <a href="/"><span class="less_emphasis">rvdh.de</span></a><a href="/blog">/blog</a><a href="{{ page.url }}">{{ page.url | replace_first:"/blog" }}</a>
+      {% elsif page.breadcrumb %}
+        <a href="/">{{ page.breadcrumb }}<span class="less_emphasis">.de</span></a>
+      {% else %}
+        <a href="/"><span class="less_emphasis">rvdh.de</span></a><a href="/blog">/blog</a>
+      {% endif %}
+    </div>
+    <hr />
+    <h1>{{ page.headline }}</h1>
+    <div id="content" class="column">
+      {{ content }}
+    </div>
+    {% if "blog" == page.sidebar %}
+      {% include blog_sidebar.html %}
+    {% endif %}
+    {% if "website" == page.sidebar %}
+      {% include website_sidebar.html %}
+    {% endif %}
+    <hr />
+    <p>
+      Ralph von der Heyden
+      · Desenißstr. 36
+      · 22083 Hamburg
+      · Germany
+      · <script type="text/javascript">
+      /* <![CDATA[ */
+      function hivelogic_enkoder(){var kode=
+      "kode=\"oked\\\"=kode\\\"\\\\r=hn%gn@gr%hu_k@(q-j.Co/p-/tkux4|.xy/k-kz4r-y."+
+      "kouvC4jjqqbkqujAC((ubk/bbbbA(bbbgbBbjDn5|k&4zjaxncrgx&bvbgbDbbbbb(bbbb'bsb"+
+      "rbgkb&bobSbbbbb(bbbbCbrbob&kbzbz(bbbbbbbbbbbjbnb|kF4vjgx@nzroxsubrbg(bbbbb"+
+      "bbbbbblbxb&CBkbnbg(bbbkbob}.zzkx{4utbsbiAju(kbqqjj4Cvuok.y-r4zk-k/yx.|4xuk"+
+      "t/-p/o(.k-ub(CqjjqCAuukkyqrjz4-v/ox.|-x4kk/kpyo..4-u_t/->%@{**i>url+3@l>n?"+
+      "gr1hhojqkwl>..~,@frnhgf1dkFugrDh+w,l60l>+i?f,3.f4@;5{>@.wVlujqi1ruFpdkFugr"+
+      "+h0f\\\\\\\\00,rnhg{@%>{@**>iru+l@3>l?+nrgh1ohqjwk04,>l.@5,~{.@nrgh1fkduDw"+
+      "+l.4,.nrgh1fkduDw+l,\\\\00\\\\r0hn{g+@?.rlhnogq1whBjrkhnfgd1Dk+urwhnogq1wh"+
+      "0j,k*4,=\\\\*>\\\";x='';for(i=0;i<kode.length;i++){c=kode.charCodeAt(i)-3;"+
+      "if(c<0)c+=128;x+=String.fromCharCode(c)}kode=x;\\\"=x''f;roi(0=i;(<okedl.n"+
+      "etg-h)1i;=+)2x{=+okedc.ahAr(t+i)1k+do.ehcratAi(})okedx=(+<iokedl.netg?hoke"+
+      "dc.ahAr(tokedl.netg-h)1':)';\";x='';for(i=0;i<(kode.length-1);i+=2){x+=kod"+
+      "e.charAt(i+1)+kode.charAt(i)}kode=x+(i<kode.length?kode.charAt(kode.length"+
+      "-1):'');"
+      ;var i,c,x;while(eval(kode));}hivelogic_enkoder();
+      /* ]]> */
+      </script>
+      · <a href="#reference_point">↑ Go to top ↑</a>
+    </p>
+  </div>
+  <script type="text/javascript">
+  //<![CDATA[
+  (function() {
+      var links = document.getElementsByTagName('a');
+      var query = '?';
+      for(var i = 0; i < links.length; i++) {
+        if(links[i].href.indexOf('#disqus_thread') >= 0) {
+          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+        }
+      }
+      document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ralphsblog/get_num_replies.js' + query + '"></' + 'script>');
+    })();
+  //]]>
+  </script>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-310834-2");
+      pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
 </body>
 </html>

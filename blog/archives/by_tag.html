@@ -28,20 +28,6 @@ headline: Ralph’s Blog Archives by Tag
   {% endfor %}
 </ul>
 
-<h4 id="tag_talks">Posts tagged with talks:</h4>
-<ul class="posts">
-  {% for post in site.tags.talks %}
-    {% include post_list_item.html %}
-  {% endfor %}
-</ul>
-
-<h4 id="tag_twitter">Posts tagged with twitter:</h4>
-<ul class="posts">
-  {% for post in site.tags.twitter %}
-    {% include post_list_item.html %}
-  {% endfor %}
-</ul>
-
 <h4 id="tag_rails">Posts tagged with rails:</h4>
 <ul class="posts">
   {% for post in site.tags.rails %}
@@ -52,6 +38,20 @@ headline: Ralph’s Blog Archives by Tag
 <h4 id="tag_ruby">Posts tagged with ruby:</h4>
 <ul class="posts">
   {% for post in site.tags.ruby %}
+    {% include post_list_item.html %}
+  {% endfor %}
+</ul>
+
+<h4 id="tag_talks">Posts tagged with talks:</h4>
+<ul class="posts">
+  {% for post in site.tags.talks %}
+    {% include post_list_item.html %}
+  {% endfor %}
+</ul>
+
+<h4 id="tag_twitter">Posts tagged with twitter:</h4>
+<ul class="posts">
+  {% for post in site.tags.twitter %}
     {% include post_list_item.html %}
   {% endfor %}
 </ul>

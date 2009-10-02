@@ -1,4 +1,5 @@
 # encoding: utf-8
+require 'rubygems'
 require 'jekyll'
 options  = {}
 options = Jekyll.configuration(options)
@@ -18,7 +19,7 @@ headline: Ralph’s Blog Archives by Tag
 END
 
 tag_section = []
-site.tags.each do |tag, posts|
+site.tags.keys.sort.each do |tag|
   archives_by_tag_template << "<h4 id=\"tag_#{tag}\">Posts tagged with #{tag}:</h4>\n"
   archives_by_tag_template << "<ul class=\"posts\">\n"
   posts_html =<<END
@@ -50,7 +51,7 @@ blog_sidebar_html =<<HTML
   <ul>
 HTML
 
-site.tags.keys.each do |tag|
+site.tags.keys.sort.each do |tag|
   blog_sidebar_html << "    <li><a href=\"/blog/archives/by_tag.html\#tag_#{tag}\">#{tag}</a></li>\n"
 end
 
