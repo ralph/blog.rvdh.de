@@ -10,6 +10,6 @@
 	<a href="{{post.url}}#disqus_thread">View Comments</a> ·
 	Tags:
 	{% for tag in post.tags %}
-		<a href="/archives/by_tag.html#tag_{{ tag }}">{{ tag }}</a>{% if !forloop.first %},{% endif %}
+		<a href="/blog/archives/by_tag.html#tag_{{ tag }}">{{ tag }}</a>{% if !forloop.first %},{% endif %}
 	{% endfor %}
 </div>
