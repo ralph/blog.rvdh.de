@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slides of my RailsWayCon short talk about front end performance
-topics: [talks]
+tags: [talks]
 ---
 
 I finally found the time to upload the slides of my short talk at "RailsWayCon":http://www.railswaycon.com/ to "Slideshare":http://www.slideshare.net/ralphvdh/front-end-performance-railswaycon-2009-short-talk. Feel free to leave a comment or ask questions about it!

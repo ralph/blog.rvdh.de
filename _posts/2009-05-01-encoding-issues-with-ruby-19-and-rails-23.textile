@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Encoding issues with Ruby 1.9 and Rails 2.3
-topics: [rails, ruby]
+tags: [rails, ruby]
 ---
 
 h4. Introduction

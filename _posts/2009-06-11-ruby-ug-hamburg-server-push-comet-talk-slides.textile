@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slides of my Rails usergroup Hamburg talk
-topics: [talks]
+tags: [talks]
 ---
 
 These are "the slides":http://www.slideshare.net/ralphvdh/server-push-and-comet-rails-user-group-hamburg-20090610-1570255 of my talk at the Rails user group Hamburg, which took place on the 10th June in the "XING":http://www.xing.com event room. And there was some free pizza, too. :)

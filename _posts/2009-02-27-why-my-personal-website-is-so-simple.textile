@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why my personal website is so simple
-topics: [performance]
+tags: [performance]
 ---
 
 Short before I launched this blog, I created my first personal "website":http://rvdh.de at "rvdh.de":http://rvdh.de. I have created websites before, so don't expect "FrontPage":http://en.wikipedia.org/wiki/Microsoft_FrontPage tags in the source or "Animated GIFs":http://en.wikipedia.org/wiki/Gif#Animated_.gif, but in fact I never had a personal one. So that's the real novelty. Go, take a look at it, I will explain some stuff about it now!

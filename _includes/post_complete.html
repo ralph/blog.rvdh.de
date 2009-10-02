@@ -9,7 +9,7 @@
 <div class="article_meta less_emphasis">
 	<a href="{{post.url}}#disqus_thread">View Comments</a> ·
 	Tags:
-	{% for topic in post.topics %}
-		<a href="/archives/by_tag.html#tag_{{ topic }}">{{ topic }}</a>{% if !forloop.first %},{% endif %}
+	{% for tag in post.tags %}
+		<a href="/archives/by_tag.html#tag_{{ tag }}">{{ tag }}</a>{% if !forloop.first %},{% endif %}
 	{% endfor %}
 </div>

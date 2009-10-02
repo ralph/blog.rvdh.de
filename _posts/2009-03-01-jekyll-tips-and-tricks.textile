@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll Tips and Tricks Roundup
-topics: [jekyll]
+tags: [jekyll]
 ---
 
 As I have "mentioned earlier":/2009/02/26/welcome-to-ralphs-blog.html, this blog is run by "Jekyll":http://github.com/mojombo/jekyll/tree/master, a static site generator. In this post, I want to share my experience with Jekyll and explain some tips and tricks you probably did not know before.

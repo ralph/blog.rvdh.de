@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The sense and nonsense of following on Twitter
-topics: [twitter]
+tags: [twitter]
 ---
 
 I started following "Guy Kawasaki":http://twitter.com/guykawasaki on Twitter recently. Surprisingly, he followed me back! No wonder he was following 91,121 people at the moment I added him. That leads me to the question: *Does following such a great amount of people actually make any sense?* I don't expect Guy to have read a single one of my 750 Tweets. Most probably, he just wants to display a sign of respect. People like Guy want to show that they appreciate you following them. But usually, they won't read any of your Tweets, except (possibly) @-replies and direct messages.
