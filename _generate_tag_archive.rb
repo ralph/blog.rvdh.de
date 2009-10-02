@@ -9,7 +9,7 @@ archives_by_tag_template =<<END
 ---
 layout: default
 title: Ralph’s Blog Archives by Tag
-url: /archives/by_tag.html
+url: /blog/archives/by_tag.html
 sidebar: blog
 headline: Ralph’s Blog Archives by Tag
 ---
@@ -30,6 +30,31 @@ END
   archives_by_tag_template << "</ul>\n\n"
 end
 
-File.open("archives/by_tag.html", "w") do |f|
+File.open("blog/archives/by_tag.html", "w") do |f|
   f.write(archives_by_tag_template)
+end
+
+
+
+blog_sidebar_html =<<HTML
+<div id="sidebar" class="column">
+  <h3><a href="/blog/archives/index.html">Recent posts</a></h3>
+  <ul class="posts">
+  {% for post in site.posts limit:3 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  <h3><a href="/blog/archives/by_tag.html">Tags</a></h3>
+  <ul>
+HTML
+
+site.tags.keys.each do |tag|
+  blog_sidebar_html << "    <li><a href=\"/blog/archives/by_tag.html\##{tag}\">#{tag}</a></li>\n"
+end
+
+blog_sidebar_html << "  </ul>\n</div>"
+File.open("_includes/blog_sidebar.html", "w") do |f|
+  f.write(blog_sidebar_html)
 end
