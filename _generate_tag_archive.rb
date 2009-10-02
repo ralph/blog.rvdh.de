@@ -22,9 +22,9 @@ site.tags.each do |tag, posts|
   archives_by_tag_template << "<h4 id=\"tag_#{tag}\">Posts tagged with #{tag}:</h4>\n"
   archives_by_tag_template << "<ul class=\"posts\">\n"
   posts_html =<<END
-    {% for post in site.tags.#{tag} %}
-      {% include post_list_item.html %}
-    {% endfor %}
+  {% for post in site.tags.#{tag} %}
+    {% include post_list_item.html %}
+  {% endfor %}
 END
   archives_by_tag_template << posts_html
   archives_by_tag_template << "</ul>\n\n"
