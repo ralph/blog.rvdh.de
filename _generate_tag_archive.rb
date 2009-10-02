@@ -51,7 +51,7 @@ blog_sidebar_html =<<HTML
 HTML
 
 site.tags.keys.each do |tag|
-  blog_sidebar_html << "    <li><a href=\"/blog/archives/by_tag.html\##{tag}\">#{tag}</a></li>\n"
+  blog_sidebar_html << "    <li><a href=\"/blog/archives/by_tag.html\#tag_#{tag}\">#{tag}</a></li>\n"
 end
 
 blog_sidebar_html << "  </ul>\n</div>"
