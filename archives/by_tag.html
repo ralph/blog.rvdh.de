@@ -1,28 +1,79 @@
 ---
 layout: default
-title: Ralph’s Blog Archives
+title: Ralph’s Blog Archives by Tag
 url: /archives/by_tag.html
+sidebar: blog
+headline: Ralph’s Blog Archives by Tag
 ---
 
 <h3>Blog Posts Archives</h3>
+<h4 id="tag_blog">Posts tagged with blog:</h4>
+<ul class="posts">
+    {% for post in site.tags.blog %}
+      <li>
+        <span class="less_emphasis small">{{ post.date | date_to_string }} »</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
 
-{% assign tag = 'blog' %}
-{% include posts_by_tag.html %}
+<h4 id="tag_jekyll">Posts tagged with jekyll:</h4>
+<ul class="posts">
+    {% for post in site.tags.jekyll %}
+      <li>
+        <span class="less_emphasis small">{{ post.date | date_to_string }} »</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
 
-{% assign tag = 'jekyll' %}
-{% include posts_by_tag.html %}
+<h4 id="tag_performance">Posts tagged with performance:</h4>
+<ul class="posts">
+    {% for post in site.tags.performance %}
+      <li>
+        <span class="less_emphasis small">{{ post.date | date_to_string }} »</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
 
-{% assign tag = 'performance' %}
-{% include posts_by_tag.html %}
+<h4 id="tag_talks">Posts tagged with talks:</h4>
+<ul class="posts">
+    {% for post in site.tags.talks %}
+      <li>
+        <span class="less_emphasis small">{{ post.date | date_to_string }} »</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
 
-{% assign tag = 'rails' %}
-{% include posts_by_tag.html %}
+<h4 id="tag_twitter">Posts tagged with twitter:</h4>
+<ul class="posts">
+    {% for post in site.tags.twitter %}
+      <li>
+        <span class="less_emphasis small">{{ post.date | date_to_string }} »</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
 
-{% assign tag = 'ruby' %}
-{% include posts_by_tag.html %}
+<h4 id="tag_rails">Posts tagged with rails:</h4>
+<ul class="posts">
+    {% for post in site.tags.rails %}
+      <li>
+        <span class="less_emphasis small">{{ post.date | date_to_string }} »</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
 
-{% assign tag = 'talks' %}
-{% include posts_by_tag.html %}
+<h4 id="tag_ruby">Posts tagged with ruby:</h4>
+<ul class="posts">
+    {% for post in site.tags.ruby %}
+      <li>
+        <span class="less_emphasis small">{{ post.date | date_to_string }} »</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
 
-{% assign tag = 'twitter' %}
-{% include posts_by_tag.html %}
