@@ -1,0 +1,9 @@
+embed_images: off
+
+stylesheets:
+  rvdh_styles:
+    - stylesheets/rvdh_styles.css
+  ie:
+    - stylesheets/blueprint/ie.css
+  print:
+    - stylesheets/blueprint/print.css
