@@ -9,10 +9,10 @@ site.read_posts(".")
 archives_by_tag_template =<<END
 ---
 layout: default
-title: Ralph’s Blog Archives by Tag
+title: Blog Archives by Tag
 url: /blog/archives/by_tag.html
 sidebar: blog
-headline: Ralph’s Blog Archives by Tag
+headline: Blog Archives by Tag
 ---
 
 <h3>Blog Posts Archives</h3>
