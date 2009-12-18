@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rails 3.0 XSS Protection in ERB
-tags: [talks]
+tags: [rails, talks]
 ---
 
 These are "the German slides":http://www.slideshare.net/ralphvdh/rails-3-xss-protection-rails-user-group-hamburg-20091209 of my talk at the Rails user group Hamburg, which took place on the 9th of December in the "XING":http://www.xing.com event room. It is about Cross Site Scripting and how you can protect your application from such an attack with Rails 3 and Rails 2.3.
