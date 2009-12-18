@@ -16,18 +16,13 @@ Furthermore, you need to have "git":http://git-scm.com/ and the "bundler gem":ht
 
 h4. Getting Rails 3
 
-That's the easy part. Just clone the "official Rails git repository":http://github.com/rails/rails:
+That's the easy part. Just clone the "official Rails git repository":http://github.com/rails/rails, including submodules:
 
-@git clone git://github.com/rails/rails.git@
-
-Next you will have to update the Rails submodules, as the rails command needs rack and arel:
-
-@cd rails@
-@git submodule init@
-@git submodule update@
+@git clone git://github.com/rails/rails.git --recursive@
 
 Unfortunately, as of this writing, rack is not included in the load path. We will have to fix that by editing the following file (mate is my editor of choice, choose yours):
 
+@cd rails@
 @mate actionpack/lib/action_dispatch.rb@
 @# Add the following line right before require 'active_support'@
 @$: << File.expand_path('../../../rack/lib', __FILE__)@
