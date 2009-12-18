@@ -1,0 +1,92 @@
+---
+layout: post
+title: Trying Rails 3.0.pre today
+tags: [rails]
+---
+
+There's so much exciting stuff coming up in Rails 3. How about giving it a test drive today? "Dr Nic":http://drnicwilliams.com has done it "before":http://drnicwilliams.com/2009/11/03/first-look-at-rails-3-0-pre/, but his post is a little outdated, so I will give you an update here.
+
+
+h4. The prerequisites
+
+First, make sure you are running a recent Ruby version. You need at least Ruby 1.8.7, if you still prefer the 1.8 series. So if you are running Leopard with the default Ruby installation, you are out of luck. Anyways it is recommended to switch to Ruby 1.9.1-p376. For an easy way to switch Ruby installations, try "RVM":http://rvm.beginrescueend.com/.
+
+Furthermore, you need to have "git":http://git-scm.com/ and the "bundler gem":http://github.com/wycats/bundler (at least version 0.7.1) installed.
+
+
+h4. Getting Rails 3
+
+That's the easy part. Just clone the "official Rails git repository":http://github.com/rails/rails:
+
+@git clone git://github.com/rails/rails.git@
+
+Next you will have to update the Rails submodules, as the rails command needs rack and arel:
+
+@cd rails@
+@git submodule init@
+@git submodule update@
+
+Unfortunately, as of this writing, rack is not included in the load path. We will have to fix that by editing the following file (mate is my editor of choice, choose yours):
+
+@mate actionpack/lib/action_dispatch.rb@
+@# Add the following line right before require 'active_support'@
+@$: << File.expand_path('../../../rack/lib', __FILE__)@
+
+Congratulations! You now have a working Rails 3 installation!
+
+
+h4. Creating an application
+
+What's the use of having Rails 3 without creating a new application? So we just go for it!
+
+First, step out of your Rails 3 directory:
+@cd ..@
+
+Then, create a new project:
+@ruby rails/railties/bin/rails awesome_project@
+
+If you are using .git, create this .gitignore file:
+
+@.DS_Store@
+@.rake_tasks~@
+@config/database.yml@
+@doc/api@
+@log/*.log@
+@tmp/**/*@
+@db/*.sqlite3@
+@bin/*@
+@vendor/gems/*@
+@!vendor/gems/cache/@
+
+Then commit the first version of the project:
+
+@cd awesome_project@
+@mate .gitignore # insert the stuff from above@
+@git init@
+@git add .@
+@git ci -am "initial commit"@
+
+Next, we have to bundle some gems. Unfortunately, the default Rails Gemfile is not any good, so we will have to replace it with something more useful like this:
+
+@mate Gemfile@
+
+Delete or comment out existing content and insert the following lines:
+
+@gem "arel", "0.2.pre", :git => "git://github.com/rails/arel.git"@
+@gem "rack", "1.0.1", :git => "git://github.com/rails/rack.git"@
+@gem "rails", "3.0.pre", :git => "git://github.com/rails/rails.git"@
+
+
+Then we run bundler:
+
+@gem bundle@
+
+After that, you should have a fully working Rails 3.0.pre installation. Try the following command to see if everything works for you:
+
+@rake -T@
+@script/console@
+@script/server@
+
+If everything is working fine, think about the next steps. For example, you are probably going to need a database adapter, so it's certainly a good idea to bundle that.
+
+Have fun using Rails 3.0.pre!
