@@ -24,7 +24,7 @@ Unfortunately, as of this writing, rack is not included in the load path. We wil
 
 @cd rails@
 @mate actionpack/lib/action_dispatch.rb@
-@# Add the following line right before require 'active_support'@
+@# Add the following line right before require 'active_support/ruby/shim'@
 @$: << File.expand_path('../../../rack/lib', __FILE__)@
 
 Congratulations! You now have a working Rails 3 installation!
