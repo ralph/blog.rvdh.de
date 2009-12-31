@@ -20,13 +20,6 @@ That's the easy part. Just clone the "official Rails git repository":http://gith
 
 @git clone git://github.com/rails/rails.git --recursive@
 
-Unfortunately, as of this writing, rack is not included in the load path. We will have to fix that by editing the following file (mate is my editor of choice, choose yours):
-
-@cd rails@
-@mate actionpack/lib/action_dispatch.rb@
-@# Add the following line right before require 'active_support'@
-@$: << File.expand_path('../../../rack/lib', __FILE__)@
-
 Congratulations! You now have a working Rails 3 installation!
 
 
