@@ -77,4 +77,6 @@ After that, you should have a fully working Rails 3.0.pre installation. Try the 
 
 If everything is working fine, think about the next steps. For example, you are probably going to need a database adapter, so it's certainly a good idea to bundle that.
 
+*UPDATE*: If you want to check out an application that is exactly that far, you can check out my "Rails 3 sample application":http://github.com/ralph/sample-rails-3.0-project from Github.
+
 Have fun using Rails 3.0.pre!
