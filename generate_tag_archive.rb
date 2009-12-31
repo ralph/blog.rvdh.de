@@ -1,5 +1,7 @@
 # encoding: utf-8
-require 'rubygems'
+environment = File.expand_path('../vendor/gems/environment', __FILE__)
+require environment
+
 require 'jekyll'
 options  = {}
 options = Jekyll.configuration(options)
@@ -31,7 +33,7 @@ END
   archives_by_tag_template << "</ul>\n\n"
 end
 
-File.open("blog/archives/by_tag.html", "w") do |f|
+File.open("site_source/blog/archives/by_tag.html", "w") do |f|
   f.write(archives_by_tag_template)
 end
 
@@ -56,6 +58,6 @@ site.tags.keys.sort.each do |tag|
 end
 
 blog_sidebar_html << "  </ul>\n</div>"
-File.open("_includes/blog_sidebar.html", "w") do |f|
+File.open("site_source/_includes/blog_sidebar.html", "w") do |f|
   f.write(blog_sidebar_html)
 end
