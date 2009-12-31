@@ -4,6 +4,6 @@ stylesheets:
   rvdh_styles:
     - site_source/stylesheets/rvdh_styles.css
   ie:
-    - site_source/stylesheets/blueprint/ie.css
+    - site_source/stylesheets/ie.css
   print:
-    - site_source/stylesheets/blueprint/print.css
+    - site_source/stylesheets/print.css
