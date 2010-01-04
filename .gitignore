@@ -1,4 +1,6 @@
-bin
 _site
 .DS_Store
 *.tmproj
+bin/*
+vendor/gems/*
+!vendor/gems/cache/
