@@ -1,0 +1,19 @@
+---
+layout: post
+title: The phone platform of the future
+tags: [mobile, iphone]
+---
+
+You "may":http://twitter.com/ralph/status/8319603144 "have":http://twitter.com/ralph/status/8340889761 "heard":http://twitter.com/ralph/status/8690268177 that my 1st gen iPhone broke only recently. This is why I got an iPhone 3GS today, but not without an ache in my stomach. That is not only because of the big heap of money I needed to hand over to get an unlocked phone. It's more because I have a strong doubt whether the iPhone will continue to attract developers and thus be the phone platform of the future, given the App Store rules won't change significantly in the near future.
+
+While many iPhone developers are of the opinion that developing for the iPhone is a joy compared to all other mobile devices, the waiting time between submission and approval is horrible. That is especially true in an agile world, where you have a dozen bugs fixed and two features added in the 2-week timespan that Apple needs to review the "new" version of your application.
+
+So what's the advantage of reviewing stuff? A quick review of an application won't guarantee it's not malicious. There has been malicious software in the App Store before. Only a review of the source code could prevent malicious software, but of course Apple does not have access to all the source code of all the applications in the App Store. And if it had, it would not have the time to review it properly.
+
+Next, Apple promises that the reviewing process makes sure that applications are more reliable. I think the opposite is true. By delaying application updates by roughly two weeks, more stable versions of the same software could better be shipped via snail mail.
+
+So what should Apple do?
+
+Well, that's easy. Just take a look at how the operating system works that I am currently using to write this post, and that as served me so well in the past years. I can install any kind of software in my local MacBook Pro running Mac OSX. Have I ever had problems with malicious or unstable software? Not any more than on the iPhone. So Apple should open its doors for any kinds of applications, without the cumbersome and unreliable reviewing process.
+
+I'm not trying to say that rejecting or pulling an app is essentially a bad thing. If users complain about a software being malicious, pull it. If lots of users complain about an app crashing all the time, give the developers a deadline, then pull it. What I'm trying to say is, the strict rules of the App Store, and the delay caused by Apple for each new version of a software will eventually kill the innovation that drives the iPhone platform. The innovation that is currently still inherent among iPhone developers. So it is time to give up those unnecessary rules before the innovation has died.
