@@ -14,9 +14,23 @@ headline: Blog Archives by Tag
   {% endfor %}
 </ul>
 
+<h4 id="tag_iphone">Posts tagged with iphone:</h4>
+<ul class="posts">
+  {% for post in site.tags.iphone %}
+    {% include post_list_item.html %}
+  {% endfor %}
+</ul>
+
 <h4 id="tag_jekyll">Posts tagged with jekyll:</h4>
 <ul class="posts">
   {% for post in site.tags.jekyll %}
+    {% include post_list_item.html %}
+  {% endfor %}
+</ul>
+
+<h4 id="tag_mobile">Posts tagged with mobile:</h4>
+<ul class="posts">
+  {% for post in site.tags.mobile %}
     {% include post_list_item.html %}
   {% endfor %}
 </ul>
