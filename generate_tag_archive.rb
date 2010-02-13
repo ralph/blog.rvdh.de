@@ -1,5 +1,5 @@
 # encoding: utf-8
-environment = File.expand_path('../vendor/gems/environment', __FILE__)
+environment = File.expand_path('../.bundle/environment.rb', __FILE__)
 require environment
 
 require 'jekyll'
