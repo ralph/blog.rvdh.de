@@ -64,13 +64,13 @@ module Bundler
   LOCKED_BY    = '0.9.5'
   FINGERPRINT  = "10c3d262a7999ec7fb437aaa57d8bd38d2550dc1"
   SPECS        = [
-        {:version=>"0.4.0", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/Platform-0.4.0/lib"], :name=>"Platform", :groups=>[:default]},
-        {:version=>"1.0.1", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/open4-1.0.1/lib"], :name=>"open4", :groups=>[:default]},
         {:version=>"2.0.0", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/liquid-2.0.0/lib"], :name=>"liquid", :groups=>[:default]},
-        {:version=>"2.3.5", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/activesupport-2.3.5/lib"], :name=>"activesupport", :groups=>[:default]},
+        {:version=>"1.0.1", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/open4-1.0.1/lib"], :name=>"open4", :groups=>[:default]},
+        {:version=>"0.4.0", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/Platform-0.4.0/lib"], :name=>"Platform", :groups=>[:default]},
         {:version=>"4.2.2", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/RedCloth-4.2.2/lib", "/Users/ralph/.bundle/ruby/1.8/gems/RedCloth-4.2.2/ext", "/Users/ralph/.bundle/ruby/1.8/gems/RedCloth-4.2.2/lib/case_sensitive_require"], :name=>"RedCloth", :groups=>[:default]},
-        {:version=>"1.0.1", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/stemmer-1.0.1/lib"], :name=>"stemmer", :groups=>[:default]},
+        {:version=>"2.3.5", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/activesupport-2.3.5/lib"], :name=>"activesupport", :groups=>[:default]},
         {:version=>"0.1.4", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/POpen4-0.1.4/lib"], :name=>"POpen4", :groups=>[:default]},
+        {:version=>"1.0.1", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/stemmer-1.0.1/lib"], :name=>"stemmer", :groups=>[:default]},
         {:version=>"1.0.1", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/rack-1.0.1/lib"], :name=>"rack", :groups=>[:default]},
         {:version=>"2.3.5", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/actionpack-2.3.5/lib"], :name=>"actionpack", :groups=>[:default]},
         {:version=>"2.3.5", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/actionmailer-2.3.5/lib"], :name=>"actionmailer", :groups=>[:default]},
@@ -79,13 +79,13 @@ module Bundler
         {:version=>"1.3.1", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/directory_watcher-1.3.1/lib"], :name=>"directory_watcher", :groups=>[:default]},
         {:version=>"0.8.7", :load_paths=>["/Users/ralph/.rvm/gems/ruby-1.8.7-p249%global/gems/rake-0.8.7/lib"], :name=>"rake", :groups=>[:default]},
         {:version=>"2.3.5", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/activerecord-2.3.5/lib"], :name=>"activerecord", :groups=>[:default]},
-        {:version=>"0.2.0", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/closure-compiler-0.2.0/lib"], :name=>"closure-compiler", :groups=>[:default]},
         {:version=>"0.6.0", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/maruku-0.6.0/lib"], :name=>"maruku", :groups=>[:default]},
         {:version=>"1.3.1", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/classifier-1.3.1/lib"], :name=>"classifier", :groups=>[:default]},
-        {:version=>"0.5.7", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/jekyll-0.5.7/lib"], :name=>"jekyll", :groups=>[:default]},
+        {:version=>"0.2.0", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/closure-compiler-0.2.0/lib"], :name=>"closure-compiler", :groups=>[:default]},
         {:version=>"2.3.5", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/activeresource-2.3.5/lib"], :name=>"activeresource", :groups=>[:default]},
         {:version=>"2.3.5", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/rails-2.3.5/lib"], :name=>"rails", :groups=>[:default]},
         {:version=>"0.4.4", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/jammit-0.4.4/lib"], :name=>"jammit", :groups=>[:default]},
+        {:version=>"0.5.7", :load_paths=>["/Users/ralph/.bundle/ruby/1.8/gems/jekyll-0.5.7/lib"], :name=>"jekyll", :groups=>[:default]},
       ]
   AUTOREQUIRES = {:default=>[["jekyll", false], ["jammit", false]]}
 
