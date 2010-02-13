@@ -1,0 +1,59 @@
+--- 
+dependencies: 
+  jekyll: 
+    group: 
+    - :default
+    version: = 0.5.7
+  jammit: 
+    group: 
+    - :default
+    version: = 0.4.4
+specs: 
+- Platform: 
+    version: 0.4.0
+- open4: 
+    version: 1.0.1
+- liquid: 
+    version: 2.0.0
+- activesupport: 
+    version: 2.3.5
+- RedCloth: 
+    version: 4.2.2
+- stemmer: 
+    version: 1.0.1
+- POpen4: 
+    version: 0.1.4
+- rack: 
+    version: 1.0.1
+- actionpack: 
+    version: 2.3.5
+- actionmailer: 
+    version: 2.3.5
+- syntax: 
+    version: 1.0.0
+- yui-compressor: 
+    version: 0.9.1
+- directory_watcher: 
+    version: 1.3.1
+- rake: 
+    version: 0.8.7
+- activerecord: 
+    version: 2.3.5
+- closure-compiler: 
+    version: 0.2.0
+- maruku: 
+    version: 0.6.0
+- classifier: 
+    version: 1.3.1
+- jekyll: 
+    version: 0.5.7
+- activeresource: 
+    version: 2.3.5
+- rails: 
+    version: 2.3.5
+- jammit: 
+    version: 0.4.4
+hash: 10c3d262a7999ec7fb437aaa57d8bd38d2550dc1
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
