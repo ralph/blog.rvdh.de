@@ -35,6 +35,13 @@ headline: Blog Archives by Tag
   {% endfor %}
 </ul>
 
+<h4 id="tag_mysql">Posts tagged with mysql:</h4>
+<ul class="posts">
+  {% for post in site.tags.mysql %}
+    {% include post_list_item.html %}
+  {% endfor %}
+</ul>
+
 <h4 id="tag_performance">Posts tagged with performance:</h4>
 <ul class="posts">
   {% for post in site.tags.performance %}
