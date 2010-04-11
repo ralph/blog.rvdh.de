@@ -1,0 +1,21 @@
+---
+layout: post
+title: Developing for the iPhone vs. developing for the web
+tags: [iphone, rails, web]
+---
+
+As you may know, I sincerely enjoy developing stuff for the web. But I also enjoy using native applications on my iPhone, so learning iPhone development has been on my todo list for a long time. Today, I stroke the item off the list, without having learnt anything about it. It's just not interesting to me any more.
+
+In order to explain my reasons, I have assembled a list that compares the possibilities of native iPhone development using Objective-C with web development.
+
+| |_. iPhone|_. web|
+|Apps can be used by other mobile operating systems?|no|yes|
+|Familiar web technologies like HTML and JavaScript can be reused?|no|yes|
+|Apps can be updated whenever you want/need to?|no|yes|
+|You can use new technologies like "NoSQL":http://en.wikipedia.org/wiki/NoSQL and "node.js":http://nodejs.org/?|no|yes|
+|Apps have to go through some stupid "review process":/blog/2010/02/14/the-phone-platform-of-the-future/?|yes|no|
+|Available features and languages are defined by some kind of "control freak":http://www.taoeffect.com/blog/2010/04/steve-jobs-response-on-section-3-3-1/?|yes|no|
+|"Apps that compete with Apple software":http://angelo.dinardi.name/2008/09/20/mailwrangler-and-the-apple-app-store/ will be banned?|yes|no|
+|You have to submit a "final app":http://boredzo.org/killed-iphone-apps/ (costing time and money) to find out whether your app will be accepted?|yes|no|
+
+Just counting the yes and nos, there is no clear winner. Of course, this list is 100% objective and complete. If you have anything to add, against all expectations and common sense, please leave a comment.
