@@ -7,7 +7,12 @@ headline: Ralph’s Blog - Reads for Rubyists
 {% include post_complete.html %}
 
 <div id="disqus_thread"></div>
-<script type="text/javascript" src="http://disqus.com/forums/ralphsblog/embed.js"></script>
-<noscript>
-	<p><a href="http://ralphsblog.disqus.com/?url=ref">View the discussion thread.</a></p>
-</noscript>
+<script type="text/javascript">
+ var disqus_identifier = "{{ post.url }}";
+ (function() {
+   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+   dsq.src = 'http://ralphsblog.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=ralphsblog">comments powered by Disqus.</a></noscript>
