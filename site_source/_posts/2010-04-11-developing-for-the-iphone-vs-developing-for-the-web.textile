@@ -19,3 +19,5 @@ In order to explain my reasons, I have assembled a list that compares the possib
 |You have to submit a "final app":http://boredzo.org/killed-iphone-apps/ (costing time and money) to find out whether your app will be accepted?|yes|no|
 
 Just counting the yes and nos, there is no clear winner. Of course, this list is 100% objective and complete. If you have anything to add, against all expectations and common sense, please leave a comment.
+
+*Update:* "This blog post by 37signals":http://37signals.com/svn/posts/2273-five-rational-arguments-against-apples-331-policy sums up my feelings about Apple pretty well.
