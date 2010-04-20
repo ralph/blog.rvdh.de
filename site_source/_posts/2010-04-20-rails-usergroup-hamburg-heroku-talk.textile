@@ -1,0 +1,13 @@
+---
+layout: post
+title: Slides of my Rails usergroup Hamburg talk about Heroku
+tags: [talks]
+---
+
+Better late than never, here are "the slides":http://www.slideshare.net/ralphvdh/rails-usergroup-hamburg-heroku of my talk at the last Rails usergroup Hamburg about "heroku":http://www.slideshare.net/ralphvdh/rails-usergroup-hamburg-heroku.
+
+<object type="application/x-shockwave-flash" data="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=heroku-100420064848-phpapp01&stripped_title=rails-usergroup-hamburg-heroku" style="margin:0px" width="425" height="355">
+  <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=heroku-100420064848-phpapp01&stripped_title=rails-usergroup-hamburg-heroku" />
+  <param name="allowFullScreen" value="true"/>
+  <param name="allowScriptAccess" value="always"/>
+</object>
