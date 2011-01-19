@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Slides of out Rails usergroup Hamburg talk about Redis
+title: Slides of our Rails usergroup Hamburg talk about Redis
 tags: [talks, redis, mysql, performance, ruby]
 ---
 
