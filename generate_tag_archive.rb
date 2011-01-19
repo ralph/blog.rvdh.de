@@ -1,6 +1,6 @@
 # encoding: utf-8
-environment = File.expand_path('../.bundle/environment.rb', __FILE__)
-require environment
+require "rubygems"
+require "bundler/setup"
 
 require 'jekyll'
 options  = {}

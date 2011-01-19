@@ -56,6 +56,13 @@ headline: Blog Archives by Tag
   {% endfor %}
 </ul>
 
+<h4 id="tag_redis">Posts tagged with redis:</h4>
+<ul class="posts">
+  {% for post in site.tags.redis %}
+    {% include post_list_item.html %}
+  {% endfor %}
+</ul>
+
 <h4 id="tag_ruby">Posts tagged with ruby:</h4>
 <ul class="posts">
   {% for post in site.tags.ruby %}
