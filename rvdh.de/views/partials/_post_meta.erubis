@@ -1,0 +1,9 @@
+<% post = post_meta -%>
+<div class="article_meta less_emphasis">
+  <a href="<%= post.permalink %>/#disqus_thread">View Comments</a> ·
+	Tags:
+  <% post.tags.each do |tag| -%>
+    <a href="/archive/#tag_<%= tag %>"><%= tag %></a>
+    <%= '| ' if tag != post.tags.last %>
+  <% end -%>
+</div>

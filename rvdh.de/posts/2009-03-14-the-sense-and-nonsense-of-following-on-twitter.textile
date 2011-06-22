@@ -1,0 +1,18 @@
+---
+layout: post
+title: The sense and nonsense of following on Twitter
+tags: [twitter]
+---
+
+I started following "Guy Kawasaki":http://twitter.com/guykawasaki on Twitter recently. Surprisingly, he followed me back! No wonder he was following 91,121 people at the moment I added him. That leads me to the question: *Does following such a great amount of people actually make any sense?* I don't expect Guy to have read a single one of my 750 Tweets. Most probably, he just wants to display a sign of respect. People like Guy want to show that they appreciate you following them. But usually, they won't read any of your Tweets, except (possibly) @-replies and direct messages.
+
+So the interpretation of following or not following someone is very subjective. Some people tend to think you are an asshole if you do not follow them back. They expect you to have Guy Kawasaki's opinion and follow them, and if you don't, they feel it's a sign of disrespect. Others only follow people whose updates they are really interested in, and don't really care if they are followed back or not.
+
+This leads us to some interesting problems: The first concerns people like Guy: How is he supposed to really follow people he is interested in? Well this is easy. Twitter clients like "TweetDeck":http://www.tweetdeck.com/ allow users to "filter":http://jessenewhart.com/twitter/how-to-effectively-follow-15000-people-on-twitter-using-these-tweetdeck-tricks/ the people they are following, by classifying them into groups.
+
+The second problem concerns the two different interpretations of following back. If you want to make sure you do not offend people, you have to follow them back, as long as it's not some self-proclaimed online marketing expert. I see two ways out of this dilemma: Either we could educate people. Very improbable. Or we could follow everyone back that we don't explicitly dislike and add filters to our client applications. So I think in the near future, most Twitter clients will allow us to form groups of people whose updates we really want to read. Filtering tweets will be pretty standard for any Twitter client, soon.
+
+The third problem is people who follow others just to be followed. A high number of followers means a higher reputation in the Twitterverse. This is why there are lots of blog posts and forum entries floating around explaining how to gain a large amount of followers in no time. But this is pointless, the people following complete strangers and being followed back build a social network that is actually hollow. Others may see your high number of followers, but they will soon find out that you don't have more to say than the guy next door. But we have to get used to the fact that a high number of followers doesn't mean a thing at all.
+
+By the way, personally, I do not necessarily follow back people who are following me. Yeah, that's a solution, too. Not giving a damn about offending anyone. If you cannot take it, turn to your 500 followers (who are all very successful online marketing experts) for comfort.
+

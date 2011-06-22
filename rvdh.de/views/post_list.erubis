@@ -1,0 +1,22 @@
+<h3>Archive of all posts by date</h3>
+
+<% @posts.group_by { |post| post.year }.each do |year, posts| -%>
+  <h4><%= year %></h4>
+  <% posts.group_by { |post| post.month }.each do |month, posts| -%>
+    <h5><%= Date::MONTHNAMES[month] %></h5>
+    <ul>
+      <%= partial 'partials/post_li', :collection => posts %>
+    </ul>
+  <% end -%>
+<% end -%>
+
+
+<h3>Archive of all posts by tag</h3>
+
+<% @posts.map(&:tags).flatten.uniq.sort.each do |tag| -%>
+  <% posts = Post.where(:tags.include => tag).all -%>
+  <h4 id="tag_<%= tag %>"><%= tag %></h4>
+  <ul>
+    <%= partial 'partials/post_li', :collection => posts %>
+  </ul>
+<% end -%>

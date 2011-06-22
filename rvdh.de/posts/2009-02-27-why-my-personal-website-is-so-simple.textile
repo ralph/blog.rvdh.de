@@ -1,0 +1,31 @@
+---
+layout: post
+title: Why my personal website is so simple
+tags: [performance]
+---
+
+Short before I launched this blog, I created my first personal "website":http://rvdh.de at "rvdh.de":http://rvdh.de. I have created websites before, so don't expect "FrontPage":http://en.wikipedia.org/wiki/Microsoft_FrontPage tags in the source or "Animated GIFs":http://en.wikipedia.org/wiki/Gif#Animated_.gif, but in fact I never had a personal one. So that's the real novelty. Go, take a look at it, I will explain some stuff about it now!
+
+Had a peek? OK, here we go. In short terms: With "this website":http://rvdh.de, I wanted to take a shot at how *I* want information to be presented on the internet. In many cases I find sites that structure and align information in the worst possible ways. So when I decided to create a website for myself, I sat down and thought what I wanted to show the people. I only wanted to tell a few sentences about myself and add some links to my various profiles on the web, so the website acts as some kind of aggregator where I can send people if they want to get to know me. I can use the url for conference passes or for my profile on social networking sites.
+
+In the end, this is not a lot information. So my website was definitely going to be a one pager. This is the simplest way to present a consistent set of information on the web, as long as it is not too complex for one page. OK, we have the one page approach now. But why all the textuality? Why didn't I use more graphics, especially when you get "excellent":http://somerandomdude.com/projects/bitcons/ "icons":http://www.famfamfam.com/lab/icons/silk/ for free? Well, as I said in my "initial post":/2009/02/26/welcome-to-ralphs-blog.html, I am interested in performance, which includes especially performance in the frontend. And I wanted to do the job right, because I feel there is too much emphasis on design and graphics instead of the information itself on too many websites. I want to get the information fast! So I eliminated everything that increases load time, including graphics and scripts. The only assets I use are two stylesheets, one for printing and one for screen rendering. All in all, my website uses less then 10 KB for the initial load, as you can see in the following image.
+
+!/images/rvdh_de_page_weight.png!
+
+Returning visitors only download the html file, because I am using a far future expires header to avoid conditional gets. Conditional gets occur if a resource is requested that was previously cached by the browser. The browser will then ask the server if the cached resource is still fresh. The server will answer with "304 Not Modified" if the cached resource can be used, or with updated content if the resource has expired. The bad thing is, conditional gets occur on every request for every resource in your html file. This takes a lot of time because of the "latency":http://en.wikipedia.org/wiki/Access_time of the connection. So it is best to avoid conditional gets altogether, especially if you are using a lot of assets. Well, I only got two, but anyway. On my server, I am using the following snipped in my .htaccess file to switch off conditional gets for everything but html files:
+
+<pre>
+	<code>
+		ExpiresDefault "access plus 1 year"
+		ExpiresByType text/html A0
+		FileETag none
+	</code>
+</pre>
+
+This reduces the page weight for my website to about 4 KB for every consecutive request. Problems occur if static resources like stylesheets do actually change. The browser will never know! So you have to change the url of the resource in the html, which usually means renaming the file. I solved this by a small script that adds "Git":http://git-scm.com/ "SHAs":http://en.wikipedia.org/wiki/Secure_Hash_Algorithm#SHA-0_and_SHA-1 to the filename to make it unique. Every time I update an asset, the filename is revised, and the browser gets a fresh resource. You can take a look at the "Git repository":http://github.com/ralph/rvdh.de/tree/master for my website to understand how the magic happens.
+
+And what do I get from all this? A YSlow Performance Grade A, for example, with 98 of 100 points. I don't get the full score because I am not using a "content delivery network":http://en.wikipedia.org/wiki/Content_Delivery_Network. Well, I might still be implementing "CloudFront":http://aws.amazon.com/cloudfront/ in the future, but at the moment I don't really care. My website is blazingly fast already.
+
+!/images/rvdh_de_yslow.png!
+
+Unfortunately this blog is not as optimized. Yet. It is fast already, but I will most probably optimize it some more in the future. Maybe I will even create some "jekyll":http://github.com/mojombo/jekyll/tree/master patches for asset versioning and stuff. Because I can!

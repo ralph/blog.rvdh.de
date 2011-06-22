@@ -1,0 +1,7 @@
+---
+layout: post
+title: Migrating our search from Ferret to SOLR
+tags: [rails, performance]
+---
+
+Yeah, "I blogged again":http://blog.xing.com/2009/07/migrating-our-search-from-ferret-to-solr/! But this time not at "my smallish blog":/blog, but at the "big company's blog":http://blog.xing.com/, where I'm employed since May. It's a good read for everyone who's interested in search. And if you are currently using Ferret as your search engine, this is especially for you!

@@ -1,0 +1,12 @@
+<h2 class="post_title">
+  <% if single_post.permalink == request.path -%>
+    <%= single_post.title %>
+  <% else -%>
+    <%= link_to(single_post.title, single_post.permalink) %>
+  <% end -%>
+</h2>
+<span class="less_emphasis small">» Posted on <%= single_post.date %></span>
+
+<%= textile(single_post.content) %>
+
+<%= partial 'partials/post_meta', :object => single_post %>

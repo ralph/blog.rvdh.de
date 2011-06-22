@@ -1,0 +1,10 @@
+---
+layout: post
+title: Slides of our Rails usergroup Hamburg talk about Redis
+tags: [talks, redis, mysql, performance, ruby]
+---
+
+I know it's been a month now, but here are the Slides of our (that's "Mark Schmidt":https://www.xing.com/profile/Mark_Schmidt15/ and me) "Talk about Redis at the Rails Usergroup Hamburg":http://redis-rughh.heroku.com/. In the worldcup prediction game section, I added the numbers for MySQL with and index, and those numbers are not anywhere as dramatic as the presented ones (see slide 104). But still, Redis wins :)
+
+You will see that the presentation is actually a website. It was done using "ShowOff":http://github.com/schacon/showoff and works best in fullscreen capable browsers like Google Chrome. The "source code of the presentation":http://github.com/ralph/redis_talk_rails_ug_hh can also be inspected on Github.
+

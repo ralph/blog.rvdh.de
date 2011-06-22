@@ -1,0 +1,11 @@
+---
+layout: post
+title: Welcome to Ralph's Blog
+tags: [blog, jekyll]
+---
+
+Well, I guess every Blog has to have an initial post. This is my take. Well, I plan to use this blog for ramblings about web development. I am especially interested in Rails and performance, so you can guess where the main focus of my posts will be. If you want to get to know me better, I recommend visiting "my website":http://rvdh.de.
+
+In the end, I do not want to forget the technical mumble-jumble: This blog is run by "jekyll":http://github.com/mojombo/jekyll/tree/master, the static site generator. It works much like page caching in Rails does, with all the caching done in advance. With the help of jekyll, I was able to create this blog in just a few hours. On the downside, some details do not work yet, like tags and a time based archive. At least I got comments. Comments, I say? Yes, comments! Well you can always add some dynamics to your static pages, as long as the code is executed on the client. For the specific case of comments, I use "DISQUS":http://disqus.com, a JavaScript solution. I hope this will work out well!
+
+Be sure to grab the "feed":/atom.xml to catch the latest and greatest!

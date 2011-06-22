@@ -1,0 +1,16 @@
+<div id="sidebar" class="column">
+  <h3><a href="/blog/archives/index.html">Recent posts</a></h3>
+  <ul class="posts">
+    <% Post.order_by(:date => :desc).limit(3).all.each do |post| -%>
+      <li>
+        <a href="<%= post.permalink %>"><%= post.title %></a>
+      </li>
+    <% end -%>
+  </ul>
+  <h3><a href="/blog/archives/by_tag.html">Tags</a></h3>
+  <ul>
+    <% Post.all.map(&:tags).flatten.uniq.sort.each do |tag| -%>
+      <li><a href="/blog/archives/by_tag.html#tag_<%= tag %>"><%= tag %></a></li>
+    <% end -%>
+  </ul>
+</div>

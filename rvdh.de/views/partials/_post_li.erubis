@@ -1,0 +1,4 @@
+<li class="post_list_item">
+  <span class="less_emphasis small"><%= post_li.date %></span>
+  <span class="post_list_item_title_with_arrow">»&nbsp;&nbsp;<%= link_to post_li.title, post_li.permalink %></span>
+</li>

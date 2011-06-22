@@ -1,0 +1,18 @@
+source :rubygems
+gem 'sinatra'
+gem 'erubis'
+gem 'RedCloth'
+gem 'document_mapper'
+gem 'hackety_sling'
+gem 'padrino-helpers'
+gem 'heroku'
+
+group :development do
+  gem 'shotgun'
+  gem 'ruby-debug19'
+end
+
+group :test do
+  gem 'rack-test'
+  gem 'mocha'
+end

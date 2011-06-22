@@ -1,0 +1,1 @@
+<%= partial 'partials/single_post', :collection => @posts %>

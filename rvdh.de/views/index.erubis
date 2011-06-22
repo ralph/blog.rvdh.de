@@ -1,0 +1,21 @@
+<h3>I develop stuff for the web.</h3>
+<p>
+	Being a citizen of the web since I hacked up a dial-up script for my parents' modem, I've extended this initial knowledge to quite a few web related technologies. Over the years, I have created websites and web applications in PHP, Java/J2EE and Ruby on Rails. During my studies, I've been running a small company called <a href="http://firedesign.de">FireDesign</a> with a fellow student. More details are included in my <a href="https://www.xing.com/profile/Ralph_vonderHeyden">XING profile</a>. My Master-thesis was about performance monitoring and tuning in the frontend, so I'm an expert in that specific field.
+</p>
+<p>
+	Most of the stuff I do nowadays is somehow related to Ruby on Rails. I like the agile development approach and the progress velocity. Writing automated tests with Rails is so easy that it is a matter of course. All in all, Rails has been the technology that had the biggest impact on my web development skills.
+</p>
+<p>
+	In my free time, I enjoy taking photos with one of <a href="http://www.flickr.com/photos/rvdh/sets/72157612476174727/">my cameras</a>. Furthermore, I'm interested in Internet-related culture and impact, like what the web means to our personal and business lifes. This includes the emergence of networks and relationships, like we take them for granted in our daily routine by now.
+</p>
+
+<h3><a href="/blog">My last blog posts</a></h3>
+
+<ul class="posts">
+  <%- @posts.each do |post| %>
+    <li class="post_list_item">
+      <span class="less_emphasis small"><%= post.date %></span>
+      <span class="post_list_item_title_with_arrow">»&nbsp;&nbsp;<%= link_to post.title, post.permalink %></span>
+    </li>
+  <% end -%>
+</ul>
